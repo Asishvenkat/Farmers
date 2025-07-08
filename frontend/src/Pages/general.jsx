@@ -48,7 +48,7 @@ const features = [
               <a href="#features" className={`font-medium hover:text-green-600 transition-colors ${scrollY > 50 ? 'text-gray-700' : 'text-white'}`}>Features</a>
               <a href="#how-it-works" className={`font-medium hover:text-green-600 transition-colors ${scrollY > 50 ? 'text-gray-700' : 'text-white'}`}>How It Works</a>
               <button   onClick={() => navigate('/login')} className="text-gray-600 hover:text-green-600 font-medium">Sign In</button>
-              <button className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-2 rounded-full font-medium hover:from-green-600 hover:to-emerald-700 transition-all transform hover:scale-105">
+              <button onClick={() => navigate('/register')} className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-6 py-2 rounded-full font-medium hover:from-green-600 hover:to-emerald-700 transition-all transform hover:scale-105">
                 Get Started
               </button>
             </div>
@@ -69,7 +69,7 @@ const features = [
               <a href="#features" className="block px-3 py-2 text-gray-700 hover:text-green-600">Features</a>
               <a href="#how-it-works" className="block px-3 py-2 text-gray-700 hover:text-green-600">How It Works</a>
               <button   onClick={() => navigate('/login')} className="block w-full text-left px-3 py-2 text-gray-700 hover:text-green-600">Sign In</button>
-              <button className="block w-full bg-green-500 text-white px-3 py-2 rounded-md mt-2">Get Started</button>
+              <button onClick={() => navigate('/register')} className="block w-full bg-green-500 text-white px-3 py-2 rounded-md mt-2">Get Started</button>
             </div>
           </div>
         )}
@@ -96,13 +96,13 @@ const features = [
               Connect farmers directly with retailers. Eliminate middlemen. Ensure fair prices. Build sustainable agricultural communities.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <button className="group bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-green-600 hover:to-emerald-700 transition-all transform hover:scale-105 flex items-center">
+              <button onClick={() => navigate('/register')} className="group bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:from-green-600 hover:to-emerald-700 transition-all transform hover:scale-105 flex items-center">
                 Start Your Journey
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all">
+              {/* <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all">
                 Watch Demo
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
@@ -218,7 +218,7 @@ const features = [
           <p className="text-xl text-green-100 mb-8">
             Join thousands of farmers and retailers already benefiting from our platform
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div onClick={() => navigate('/register')} className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-green-600 transition-all">
               Join Today
             </button>
